@@ -27,3 +27,7 @@ docker run --name adguardhome\
 
 # KIWIX Install Command (see their site for zim files at https://library.kiwix.org/):
 docker run -v /home/ian/kiwix:/data -p 8080:8080 ghcr.io/kiwix/kiwix-serve '*.zim'
+
+# Notes on installing the FLask API container:
+You need both the docker-componse.yml and the requirements.txt file
+
