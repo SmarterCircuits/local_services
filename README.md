@@ -30,4 +30,5 @@ docker run -v /home/ian/kiwix:/data -p 8080:8080 ghcr.io/kiwix/kiwix-serve '*.zi
 
 # Notes on installing the FLask API container:
 You need both the docker-componse.yml and the requirements.txt file
+The app.py file is an example API you can build off of.
 
