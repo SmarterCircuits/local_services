@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  chrony:
+    image: cturra/ntp
+    container_name: chrony
+    restart: unless-stopped
+    cap_add:
+      - SYS_TIME
+    environment:
+      - ENABLE_SYSCLK=true
+      - POOL_NTP_SERVERS=0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org
+    ports:
+      - "123:123/udp" # NTP port
